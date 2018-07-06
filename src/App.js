@@ -13,7 +13,7 @@ class App extends Component{
     }
 
 componentDidMount(){
-    fetch('https://facedetectionapis.herokuapp.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(users => this.setState({robots: users}));
     // this.setState({robots: robots});
